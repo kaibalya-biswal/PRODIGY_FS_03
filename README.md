@@ -10,6 +10,7 @@ A modern, full-featured e-commerce platform built with React, Supabase, and Tail
 - **Product Catalog** - Browse products by category with search and filtering
 - **Shopping Cart** - Add items, manage quantities, apply coupons
 - **Wishlist** - Save favorite products for later
+- **Product Reviews** - Rate products, read customer reviews, mark helpful reviews
 - **Responsive Design** - Works on desktop, tablet, and mobile
 - **Real-time Updates** - Live cart and inventory updates
 - **Indian Rupee Pricing** - All prices displayed in ₹
@@ -67,6 +68,7 @@ src/
 - **Products** (`/products`) - Product catalog with search/filter
 - **Categories** (`/categories`) - Browse by product category
 - **Cart** (`/cart`) - Shopping cart and checkout
+- **Product Details** (`/products/:id`) - Detailed product view with reviews
 - **Login/Register** (`/login`, `/register`) - User authentication
 
 ## 💰 Pricing

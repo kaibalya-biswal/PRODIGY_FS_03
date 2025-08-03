@@ -140,8 +140,7 @@ const CartPage = () => {
         return;
       }
 
-      // For now, redirect to a checkout page (you can implement this later)
-      toast.success('Redirecting to checkout...');
+      // Redirect to checkout page
       navigate('/checkout');
     } catch (error) {
       console.error('Error during checkout:', error);

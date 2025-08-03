@@ -65,12 +65,15 @@ const Header = ({ cartItemsCount = 0, onCartClick, onWishlistClick, wishlistCoun
             <Link to="/products" className="text-gray-700 hover:text-blue-600 transition-colors">
               Products
             </Link>
-            <Link to="/categories" className="text-gray-700 hover:text-blue-600 transition-colors">
-              Categories
-            </Link>
-            <Link to="/about" className="text-gray-700 hover:text-blue-600 transition-colors">
-              About
-            </Link>
+                         <Link to="/categories" className="text-gray-700 hover:text-blue-600 transition-colors">
+               Categories
+             </Link>
+             <Link to="/orders" className="text-gray-700 hover:text-blue-600 transition-colors">
+               Orders
+             </Link>
+             <Link to="/about" className="text-gray-700 hover:text-blue-600 transition-colors">
+               About
+             </Link>
           </nav>
 
           {/* Actions - Desktop */}
@@ -168,20 +171,27 @@ const Header = ({ cartItemsCount = 0, onCartClick, onWishlistClick, wishlistCoun
               >
                 Products
               </Link>
-              <Link
-                to="/categories"
-                className="block py-2 text-gray-700 hover:text-blue-600 transition-colors"
-                onClick={() => setIsMenuOpen(false)}
-              >
-                Categories
-              </Link>
-              <Link
-                to="/about"
-                className="block py-2 text-gray-700 hover:text-blue-600 transition-colors"
-                onClick={() => setIsMenuOpen(false)}
-              >
-                About
-              </Link>
+                             <Link
+                 to="/categories"
+                 className="block py-2 text-gray-700 hover:text-blue-600 transition-colors"
+                 onClick={() => setIsMenuOpen(false)}
+               >
+                 Categories
+               </Link>
+               <Link
+                 to="/orders"
+                 className="block py-2 text-gray-700 hover:text-blue-600 transition-colors"
+                 onClick={() => setIsMenuOpen(false)}
+               >
+                 Orders
+               </Link>
+               <Link
+                 to="/about"
+                 className="block py-2 text-gray-700 hover:text-blue-600 transition-colors"
+                 onClick={() => setIsMenuOpen(false)}
+               >
+                 About
+               </Link>
             </nav>
 
             {/* Mobile Actions */}

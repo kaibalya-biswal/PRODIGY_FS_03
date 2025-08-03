@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { Heart, Star, ShoppingCart, Eye } from 'lucide-react';
 
 const ProductCard = ({ product, onAddToCart, onAddToWishlist, onViewDetails, isInWishlist = false }) => {
@@ -84,9 +85,11 @@ const ProductCard = ({ product, onAddToCart, onAddToWishlist, onViewDetails, isI
         )}
 
         {/* Product Name */}
-        <h3 className="text-lg font-semibold text-gray-900 mt-1 mb-2 line-clamp-2">
-          {product.name}
-        </h3>
+        <Link to={`/products/${product.id}`} className="block">
+          <h3 className="text-lg font-semibold text-gray-900 mt-1 mb-2 line-clamp-2 hover:text-blue-600 transition-colors">
+            {product.name}
+          </h3>
+        </Link>
 
         {/* Description */}
         <p className="text-sm text-gray-600 mb-3 line-clamp-2">

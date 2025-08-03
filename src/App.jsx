@@ -10,6 +10,10 @@ import Login from './pages/Login';
 import Register from './pages/Register';
 import Cart from './components/Cart';
 import CartPage from './pages/CartPage';
+import OrderTracking from './pages/OrderTracking';
+import Checkout from './pages/Checkout';
+import ProductDetails from './pages/ProductDetails';
+import About from './pages/About';
 import { useState } from 'react';
 
 function App() {
@@ -41,11 +45,15 @@ function App() {
                     <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/products" element={<Products />} />
+          <Route path="/products/:productId" element={<ProductDetails />} />
           <Route path="/categories" element={<Categories />} />
           <Route path="/cart" element={<CartPage />} />
+          <Route path="/orders" element={<OrderTracking />} />
+          <Route path="/orders/:orderId" element={<OrderTracking />} />
+          <Route path="/checkout" element={<Checkout />} />
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
-          <Route path="/about" element={<div className="p-8 text-center">About page coming soon...</div>} />
+          <Route path="/about" element={<About />} />
           <Route path="/profile" element={<div className="p-8 text-center">Profile page coming soon...</div>} />
         </Routes>
           </main>

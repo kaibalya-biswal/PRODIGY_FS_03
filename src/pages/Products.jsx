@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { Search, Filter, Grid, List, ShoppingCart, Heart, Star, Eye } from 'lucide-react';
 import { supabase, dbHelpers } from '../services/supabaseClient';
 import { cartService } from '../services/cartService';
@@ -7,6 +8,7 @@ import Cart from '../components/Cart';
 import toast from 'react-hot-toast';
 
 const Products = () => {
+  const navigate = useNavigate();
   const [products, setProducts] = useState([]);
   const [categories, setCategories] = useState([]);
   const [cartItems, setCartItems] = useState([]);
@@ -143,8 +145,7 @@ const Products = () => {
   };
 
   const handleViewDetails = (productId) => {
-    // Navigate to product detail page (implement routing later)
-    console.log('View product details:', productId);
+    navigate(`/products/${productId}`);
   };
 
   const handleCheckout = async () => {
